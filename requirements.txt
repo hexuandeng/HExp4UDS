@@ -1,0 +1,4 @@
+loguru
+scipy
+transformers
+Pytorch > 1.10
