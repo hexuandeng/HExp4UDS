@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from dataclasses import dataclass, field
 from typing import Tuple, Dict
 from heuds.modules.attention.biaffine_attention import BiaffineAttention
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.utils import combine_initial_dims, fill_with_neg_inf, pad_to_tensor
 from heuds.modules.base.mlp import MLP
 from heuds.scoring.attachment_score import AttachmentScores

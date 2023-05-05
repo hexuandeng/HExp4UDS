@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 from heuds.modules.base.mlp import MLP
 import torch.nn.functional as F
 from heuds.modules.base.biaffine import Biaffine
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.utils import pad_to_tensor
 from heuds.modules.attention.biaffine_attention import BiaffineAttention
 from heuds.modules.base.mlp import MLP

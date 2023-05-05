@@ -1,7 +1,7 @@
 # Adopt from fairseq https://github.com/facebookresearch/fairseq
 
 from heuds.constant import TASK_REGISTRY, MODEL_REGISTRY
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from dataclasses import dataclass, MISSING
 from typing import Any, Dict, List, Optional, Tuple
 from loguru import logger

@@ -5,7 +5,7 @@ from heuds.models.rnn.argumented_lstm import AugmentedLstm
 from heuds.modules.input_variational_dropout import InputVariationalDropout
 from heuds.models.rnn.argumented_lstm import LstmConfig, AugmentedLstm
 from dataclasses import dataclass, field
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.models.fairseq_incremental_decoder import FairseqIncrementalDecoder
 from loguru import logger
 @dataclass

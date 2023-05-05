@@ -1,12 +1,11 @@
 import torch
+from loguru import logger
 from torch.optim import AdamW
 from transformers import get_cosine_schedule_with_warmup
-from loguru import logger
 from dataclasses import dataclass, field, fields
 from heuds.constant import register_task
-from heuds.data.uds_dataset import UDSDataset
 from heuds.task.base_task import BasePytorchTask, TaskConfig, Config
-from heuds.data.uds_dataset import UDSDatasetConfig
+from heuds.uds.data.uds_dataset import UDSDataset, UDSDatasetConfig
 
 @dataclass
 class UDSConfig(Config):

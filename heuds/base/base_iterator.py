@@ -3,8 +3,8 @@ import numpy as np
 from tqdm import trange
 from dataclasses import dataclass, field
 from typing import List, Iterable, Optional, Tuple, Union
-from heuds.data.base_batch import Batch
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_batch import Batch
+from heuds.base.base_config import BaseConfig
 
 
 @dataclass

@@ -3,7 +3,7 @@ from torch import nn
 from dataclasses import dataclass, field
 from heuds.modules.base.mlp import MLP
 from heuds.modules.base.biaffine import Biaffine
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.utils import pad_to_tensor, combine_initial_dims
 from heuds.scoring.precision import Precision
 

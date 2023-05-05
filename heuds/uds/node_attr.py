@@ -16,8 +16,8 @@ from heuds.modules.embeddings.word_embedding import WordEmbedding
 from heuds.modules.seq2vec_encoders.cnn_seq2vec import CnnEncoder
 from heuds.models.transformer.transformer_encoder import TransformerEncoder
 from heuds.models.transformer.transformer_config import EncDecBaseConfig
-from heuds.models.uds.encoder_embedding import EncoderEmbedding, EncoderEmbeddingConfig
-from heuds.config.base_config import BaseConfig
+from heuds.uds.encoder_embedding import EncoderEmbedding, EncoderEmbeddingConfig
+from heuds.base.base_config import BaseConfig
 from dataclasses import dataclass, field, fields
 from typing import List, Optional
 from heuds.constant import register_model

@@ -6,20 +6,20 @@ from loguru import logger
 from typing import List, Dict, Tuple, Any
 from dataclasses import dataclass, field
 from heuds.constant import register_model
-from heuds.data.base_batch import Batch
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_batch import Batch
+from heuds.base.base_config import BaseConfig
 from heuds.models.transformer.transformer_config import EncDecBaseConfig
 from heuds.models.transformer.transformer_encoder import TransformerEncoder
 from heuds.models.rnn.argumented_stacked_bilstm import StackedBiLstmConfig, StackedBidirectionalLstm
-from heuds.models.uds.sem_embedding import SemEmbedding
+from heuds.uds.sem_embedding import SemEmbedding
 from heuds.models.bert.bert_word_level import WordLevelBertConfig, WordLevelBert
-from heuds.models.uds.encoder_embedding import EncoderEmbeddingConfig, EncoderEmbedding
-from heuds.models.uds.node_attr import NodeAttrParser, NodeAttrParserConfig
-from heuds.models.uds.edge_attr import EdgeAttrParser, EdgeAttrParserConfig
-from heuds.models.uds.syn_edge_parser import SynEdgeParser, SynEdgeParserConfig
-from heuds.models.uds.sem_label_parser import NodeClassification, NodeClassificationConfig
-from heuds.models.uds.sem_edge_parser import SemEdgeParser, SemEdgeParserConfig
-from heuds.models.uds.sem_span_parser import SemSpanParser, SemSpanParserConfig
+from heuds.uds.encoder_embedding import EncoderEmbeddingConfig, EncoderEmbedding
+from heuds.uds.node_attr import NodeAttrParser, NodeAttrParserConfig
+from heuds.uds.edge_attr import EdgeAttrParser, EdgeAttrParserConfig
+from heuds.uds.syn_edge_parser import SynEdgeParser, SynEdgeParserConfig
+from heuds.uds.sem_label_parser import NodeClassification, NodeClassificationConfig
+from heuds.uds.sem_edge_parser import SemEdgeParser, SemEdgeParserConfig
+from heuds.uds.sem_span_parser import SemSpanParser, SemSpanParserConfig
 from heuds.modules.embeddings.word_embedding import WordEmbedding, WordEmbeddingConfig
 from heuds.scoring.f1_score import F1Metrics
 from heuds.scoring.attr_uds import DecompAttrMetrics

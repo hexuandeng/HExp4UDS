@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from typing import Optional
 from dataclasses import dataclass, field
 from heuds.modules.embeddings.base_embedding import BaseEmbedding
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 
 
 @dataclass

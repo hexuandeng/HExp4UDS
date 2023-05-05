@@ -1,8 +1,8 @@
 import torch
 from torch.nn.functional import embedding
 from dataclasses import dataclass, field
-from heuds.data.base_vocab import BaseVocab
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_vocab import BaseVocab
+from heuds.base.base_config import BaseConfig
 from heuds.modules.embeddings.base_embedding import BaseEmbedding
 
 

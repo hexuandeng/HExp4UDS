@@ -6,10 +6,10 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 sys.path.append(os.getcwd())
 
 # import for register of task and model
-from heuds.config.parser import PytorchParser
+from heuds.base.parser import PytorchParser
 from heuds.constant import MODEL_REGISTRY, TASK_REGISTRY
 from heuds.task import uds_task, conllu_task, udistill_task, predpatt_task, empty_task
-from heuds.models.uds import cascade_model, syntactic_model
+from heuds.uds import cascade_model, syntactic_model
 
 if __name__ == "__main__":
     cfg = PytorchParser()

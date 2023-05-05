@@ -3,7 +3,7 @@ import torch
 from torch.nn.utils.rnn import PackedSequence
 from heuds.models.rnn.argumented_lstm import LstmConfig, AugmentedLstm
 from dataclasses import dataclass, field
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.models.fairseq_incremental_decoder import FairseqIncrementalDecoder
 from torch.nn.utils.rnn import PackedSequence, pack_padded_sequence, pad_packed_sequence
 from heuds.models.fairseq_incremental_decoder import FairseqIncrementalDecoder

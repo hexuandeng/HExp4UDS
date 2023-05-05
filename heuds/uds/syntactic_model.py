@@ -3,10 +3,10 @@ from torch import nn
 import torch.nn.functional as F
 from typing import List, Dict, Tuple, Any
 from dataclasses import dataclass, field
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.constant import register_model
-from heuds.models.uds.syn_edge_parser import SynEdgeParser, SynEdgeParserConfig
-from heuds.models.uds.sem_label_parser import NodeClassification, NodeClassificationConfig
+from heuds.uds.syn_edge_parser import SynEdgeParser, SynEdgeParserConfig
+from heuds.uds.sem_label_parser import NodeClassification, NodeClassificationConfig
 from heuds.models.bert.bert_word_level import WordLevelBertConfig, WordLevelBert
 from heuds.scoring.attachment_score import AttachmentScores
 

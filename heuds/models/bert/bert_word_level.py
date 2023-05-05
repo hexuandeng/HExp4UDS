@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from transformers import BertModel
 from dataclasses import dataclass, field
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.modules.embeddings.base_embedding import BaseEmbedding
 
 @dataclass

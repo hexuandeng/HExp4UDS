@@ -2,8 +2,8 @@ from torch.utils.data import Dataset
 from loguru import logger
 from heuds.utils import tqdm
 from dataclasses import dataclass, field
-from heuds.data.base_vocab import BaseVocab
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_vocab import BaseVocab
+from heuds.base.base_config import BaseConfig
 import math
 from heuds.utils import process_multiprocessing
 

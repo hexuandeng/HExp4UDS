@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from transformers import get_cosine_schedule_with_warmup
 from heuds.constant import register_task
 from heuds.task.base_task import BasePytorchTask, Config
-from heuds.data.predpatt_dataset import PredPattDataset, PredPattDatasetConfig
+from heuds.uds.data.predpatt_dataset import PredPattDataset, PredPattDatasetConfig
 
 @dataclass
 class PredPattConfig(Config):

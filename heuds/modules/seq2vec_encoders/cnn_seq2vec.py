@@ -2,7 +2,7 @@ import torch
 from torch import nn
 from typing import Optional, Tuple
 from dataclasses import dataclass, field
-from heuds.config.base_config import BaseConfig
+from heuds.base.base_config import BaseConfig
 from heuds.modules.seq2vec_encoders.base_seq2vec import BaseSeq2VecEncoder
 from heuds.utils import combine_initial_dims, uncombine_initial_dims, get_activation_fn
 

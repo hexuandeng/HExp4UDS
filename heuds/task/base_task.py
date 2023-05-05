@@ -1,17 +1,15 @@
-import logging
 import os
 import random
-import numpy as np
 import torch
+import numpy as np
 from loguru import logger
 from torch.cuda import amp
 from dataclasses import dataclass, field
 from collections.abc import Sequence
 from typing import List, Optional, Any
-from heuds.config.base_config import BaseConfig, CheckpointConfig, OptimizationConfig, GenerationConfig
-from heuds.data.base_dataset import DatasetConfig
-from heuds.data.base_iterator import IteratorConfig
-from heuds.data.base_iterator import BaseIterator
+from heuds.base.base_dataset import DatasetConfig
+from heuds.base.base_iterator import BaseIterator, IteratorConfig
+from heuds.base.base_config import BaseConfig, CheckpointConfig, OptimizationConfig, GenerationConfig
 
 @dataclass
 class TaskConfig(BaseConfig):
@@ -159,9 +157,6 @@ class BasePytorchTask(object):
         if self.cfg.checkpoint.pretrained_model_dir is not None and \
             not os.path.isabs(self.cfg.checkpoint.pretrained_model_dir):
             self.cfg.checkpoint.pretrained_model_dir = os.path.join("checkpoints/", self.cfg.checkpoint.pretrained_model_dir)
-
-    def logging(self, msg, level=logging.INFO):
-        logger.log(level, msg)
 
     def _check_setting_validity(self):
         pass

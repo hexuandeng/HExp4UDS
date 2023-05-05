@@ -3,8 +3,7 @@ from loguru import logger
 from dataclasses import dataclass
 from heuds.constant import register_task
 from heuds.task.base_task import BasePytorchTask, Config
-from heuds.data.mono_dataset import MonoDataset, MonoDatasetConfig
-
+from heuds.uds.data.mono_dataset import MonoDataset, MonoDatasetConfig
 
 @dataclass
 class ConlluConfig(Config):

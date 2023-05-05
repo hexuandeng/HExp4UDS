@@ -4,9 +4,9 @@ from loguru import logger
 from heuds.utils import tqdm
 from dataclasses import dataclass, field
 from transformers import AutoTokenizer
-from heuds.data.base_vocab import BaseVocab
-from heuds.data.base_dataset import BaseDataset, DatasetConfig
-from heuds.data.uds_preprocess import DecompGraph
+from heuds.base.base_vocab import BaseVocab
+from heuds.base.base_dataset import BaseDataset, DatasetConfig
+from heuds.uds.data.uds_preprocess import DecompGraph
 from heuds.constant import NODE_ONTOLOGY, EDGE_ONTOLOGY
 import pickle
 import os
