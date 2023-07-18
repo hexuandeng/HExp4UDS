@@ -1,4 +1,4 @@
-# Holistic Exploration on Universal Decompositional Semantic Parsing: Architecture, Data Augmentation, and LLM Paradigm
+# Holistic Exploration on UDS Parsing [[pdf](PAPER.pdf)]
 
 ## Download Corresponding Datasets
 
@@ -42,3 +42,17 @@ python heuds/main.py train --task UDSTask --arch Bert_UDS --save-dir 'Bert_best'
 ```
 
 Replace "train" to "test" for model evaluation.
+
+## Citation
+
+If you find this work helpful, please consider citing as follows:
+
+```bibtex
+@misc{deng2023hexp4uds,
+  title = {Holistic Exploration on Universal Decompositional Semantic Parsing: Architecture, Data Augmentation, and LLM Paradigm},
+  author = {Hexuan Deng, Xin Zhang, Meishan Zhang, Xuebo Liu, Min Zhang},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository}
+}
+```
