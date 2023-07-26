@@ -1,4 +1,4 @@
-# Holistic Exploration on UDS Parsing [[pdf](PAPER.pdf)]
+# Holistic Exploration on UDS Parsing [[paper](https://arxiv.org/abs/2307.13424)]
 
 ## Download Corresponding Datasets
 
@@ -48,11 +48,10 @@ Replace "train" to "test" for model evaluation.
 If you find this work helpful, please consider citing as follows:
 
 ```bibtex
-@misc{deng2023hexp4uds,
+@article{deng2023hexp4uds,
   title = {Holistic Exploration on Universal Decompositional Semantic Parsing: Architecture, Data Augmentation, and LLM Paradigm},
   author = {Hexuan Deng, Xin Zhang, Meishan Zhang, Xuebo Liu, Min Zhang},
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository}
+  journal = {arXiv preprint arXiv:2307.13424},
+  year = {2023}
 }
 ```
