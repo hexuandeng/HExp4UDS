@@ -42,3 +42,34 @@ python heuds/main.py train --task UDSTask --arch Bert_UDS --save-dir 'Bert_best'
 ```
 
 Replace "train" to "test" for model evaluation.
+
+
+## Citation
+
+If you find this work helpful, please consider citing as follows:
+
+```bibtex
+@inproceedings{deng-etal-2024-holistic,
+    title = "Holistic Exploration on Universal Decompositional Semantic Parsing: Architecture, Data Augmentation, and {LLM} Paradigm",
+    author = "Deng, Hexuan  and
+      Zhang, Xin  and
+      Zhang, Meishan  and
+      Liu, Xuebo  and
+      Zhang, Min",
+    editor = "Wong, Kam-Fai  and
+      Zhang, Min  and
+      Xu, Ruifeng  and
+      Li, Jing  and
+      Wei, Zhongyu  and
+      Gui, Lin  and
+      Liang, Bin  and
+      Zhao, Runcong",
+    booktitle = "Proceedings of the 10th SIGHAN Workshop on Chinese Language Processing (SIGHAN-10)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.sighan-1.6",
+    pages = "45--57"
+}
+```
